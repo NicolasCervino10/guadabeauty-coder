@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+header nav {
+  background-color: #f1a9a9;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  color: cadetblue;
+  font-style: italic;
+  font: weight 100px;
+  font-family: 'Abel', sans-serif; }
+  header nav h1 {
+    font-size: 40px; }
+  header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: left; }
+    header nav ul li {
+      transition: 1s; }
+      header nav ul li a {
+        margin-left: 2px;
+        text-decoration: none;
+        color: cadetblue;
+        font-size: 18px;
+        font-style: italic;
+        font-family: 'Abel', sans-serif;
+        font: weight 100px; }
+    header nav ul li:hover {
+      transform: scale(1, 1); }
+
+main {
+  background-image: url(../img/fondoo.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main section h2 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    color: cadetblue; }
+  main section p {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    color: cadetblue; }
+  main section .grid-mayor {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: 300px;
+    gap: 5px; }
+    main section .grid-mayor .grid-contenedor img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; }
+  main section .carousel-inner {
+    margin: auto;
+    padding: auto;
+    height: 450px;
+    width: 60%; }
+  main .marcas h3 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Abel', sans-serif;
+    font-size: 35px;
+    color: cadetblue;
+    margin: 40px; }
+  main .marcas div {
+    display: flex;
+    justify-content: center; }
+    main .marcas div img {
+      width: 100px;
+      height: 50px;
+      margin: 15px; }
+  main .productos h4 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    color: cadetblue; }
+  main .productos .productos-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    main .productos .productos-contenedor .contenedor {
+      width: 250px;
+      height: 370px;
+      border: 2px solid;
+      background-color: #f8cfde;
+      margin: 20px;
+      text-align: center;
+      font-style: italic;
+      font-size: 25px; }
+      main .productos .productos-contenedor .contenedor img {
+        width: 230px;
+        height: 270px;
+        padding: 5px;
+        margin: 5px; }
+      main .productos .productos-contenedor .contenedor h6 {
+        text-align: center;
+        font-style: italic;
+        font-family: 'Abel', sans-serif;
+        font-size: 25px;
+        color: black; }
+
+footer {
+  background-color: black;
+  color: cadetblue;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Abel', sans-serif;
+  font-size: 15px; }
+
+@media screen and (max-width: 800px) {
+  .grid-mayor {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 250px; } }
+
+@media screen and (max-width: 400px) {
+  .grid-mayor {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 200px; } }

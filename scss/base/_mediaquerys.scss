@@ -1,0 +1,12 @@
+@media screen and (max-width:800px) {.grid-mayor {
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows:250px ;
+}
+    
+}
+@media screen and (max-width:400px) {.grid-mayor{
+    grid-template-columns:repeat(1,1fr) ;
+    grid-template-rows:200px;
+}
+    
+}

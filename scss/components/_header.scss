@@ -1,0 +1,44 @@
+header {
+    nav {
+        background-color: rgb(241, 169, 169);
+        width: 100%;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        text-align: left;
+        color:cadetblue;
+        font-style:italic;
+        font: weight 100px;
+        font-family: 'Abel', sans-serif;
+        h1{
+            font-size: 40px;
+            
+
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: left;
+            li{
+                transition: 1s;
+                a{
+                    margin-left: 2px;
+                    text-decoration: none;
+                    color: cadetblue;
+                    font-size: 18px;
+                    font-style:italic;
+                    font-family: 'Abel', sans-serif;
+                font: weight 100px;
+  
+
+                }
+            }
+            li:hover{
+                transform: scale(1,1);
+               
+            }
+        }
+
+    }
+}
