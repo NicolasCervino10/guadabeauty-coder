@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -35,7 +37,7 @@ header nav {
       transform: scale(1, 1); }
 
 main {
-  background-image: url(../img/fondoo.jpg);
+  background-color: white;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -63,11 +65,18 @@ main {
       width: 100%;
       height: 300px;
       object-fit: cover; }
-  main section .carousel-inner {
-    margin: auto;
-    padding: auto;
+  main .carusel {
+    display: flex;
+    flex-wrap: wrap;
     height: 450px;
-    width: 60%; }
+    width: 500px;
+    margin: auto;
+    padding: auto; }
+    main .carusel .carousel-inner {
+      margin: auto;
+      padding: auto;
+      height: 450px;
+      width: 60%; }
   main .marcas h3 {
     text-align: center;
     font-style: italic;
@@ -112,6 +121,113 @@ main {
         font-family: 'Abel', sans-serif;
         font-size: 25px;
         color: black; }
+  main .portada {
+    background-image: url("../img/portada1.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 280px; }
+    main .portada h1 {
+      font-style: oblique;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 45px;
+      color: black;
+      text-align: left;
+      margin: 5px;
+      padding: 5px; }
+    main .portada p {
+      font-style: oblique;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      color: black;
+      margin-top: 30px;
+      margin-right: 1050px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      letter-spacing: 0;
+      line-height: 26px;
+      font-weight: 500; }
+  main .gridservicios {
+    display: grid;
+    width: 95%;
+    background-color: white;
+    background-size: cover;
+    padding: 38px;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 40%, 60%;
+    justify-content: space-between; }
+    main .gridservicios .imgrid h6 {
+      font-size: 28px;
+      font-style: oblique;
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      text-align: left; }
+    main .gridservicios .imgrid img {
+      width: 350px;
+      height: 250px; }
+    main .gridservicios .imgrid p {
+      margin: 25px;
+      padding-top: 65px;
+      padding-left: 45px;
+      padding-right: 45px;
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: black; }
+  main .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    main .tarjetas .card {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+    main .tarjetas .card-body h5 {
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: black; }
+    main .tarjetas .card-body p {
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: black; }
+    main .tarjetas .card-body a {
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      margin: 5px; }
+    main .tarjetas .ubicacion {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+  main .sobremi h1 {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: center; }
+  main .sobremi p {
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: black; }
+  main .titulos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    main .titulos img {
+      width: 400px;
+      height: 350px;
+      margin: 5px;
+      padding: 5px; }
+  main .texto p {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin: 5px; }
 
 footer {
   background-color: black;
@@ -130,3 +246,13 @@ footer {
   .grid-mayor {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 200px; } }
+
+@media screen and (max-width: 400px) {
+  .gridservicios {
+    grid-template-columns: repeat(30%, 45%);
+    grid-template-rows: 250px; } }
+
+@media screen and (max-width: 800px) {
+  .gridservicios {
+    grid-template-columns: repeat(30% 30%);
+    grid-template-rows: 250px; } }

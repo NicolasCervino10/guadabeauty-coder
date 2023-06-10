@@ -10,3 +10,16 @@
 }
     
 }
+
+@media screen and (max-width:400px) {.gridservicios{
+    grid-template-columns: repeat(30%,45%);
+    grid-template-rows: 250px;
+}
+    
+}
+@media screen and(max-width:800px) {.gridservicios{
+    grid-template-columns: repeat(30% 30%);
+    grid-template-rows: 250px;
+}
+    
+}
